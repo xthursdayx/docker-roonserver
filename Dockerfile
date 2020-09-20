@@ -1,9 +1,15 @@
 FROM debian:9.6
 MAINTAINER steef@debruijn.ws
 
-RUN apt-get update \
-        && apt-get -y upgrade \
-        && apt-get -y install bash curl bzip2 ffmpeg cifs-utils alsa-utils
+RUN apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install -y \
+        bash \
+        curl \
+        bzip2 \
+        ffmpeg \
+        cifs-utils \
+        alsa-utils
 
 ENV ROON_SERVER_PKG RoonServer_linuxx64.tar.bz2
 ENV ROON_SERVER_URL http://download.roonlabs.com/builds/${ROON_SERVER_PKG}
