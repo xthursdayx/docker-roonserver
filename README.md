@@ -17,12 +17,11 @@ Example start:
   
   * You should change the volume mappings to you local file system paths.
   * You should set your music library root to `/music` and configure backups to `/backup` on first run.
-  * You should also publish 9003 (UDP) and the range 9100-9200 (TCP). Unfortunately these cannot be changed because you
+  * You should also publish 9003 (UDP) and the range 9100-9200 (TCP). Unfortunately these cannot be changed because Roon on your client machine will only attempt to discover the Roon Server CORE and connect to it at these ports. 
   
-
 ## Version history
 
-  * 2020-09-22: Removed `--net=host`option and replaced with exposed and published ports to make RoonServer's port use clearer to the user. 
+  * 2020-09-22: Removed `--net=host` option and replaced with exposed and published ports. 
   * 2019-03-18: Fix example start (thanx @heapxor); add `systemd` example.
   * 2019-01-23: updated base image to `debian-9.6`
   * 2017-08-08: created initial images based on discussion on roonlabs forum
