@@ -1,5 +1,5 @@
 FROM debian:9.6
-MAINTAINER steef@debruijn.ws
+MAINTAINER xthursdayx
 
 RUN apt-get update && \
     apt-get upgrade -y && \
@@ -21,3 +21,4 @@ VOLUME [ "/app", "/data", "/music", "/backup" ]
 ADD run.sh /
 ENTRYPOINT /run.sh
 
+EXPOSE 9003/udp 9100-9200/tcp
