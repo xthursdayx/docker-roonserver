@@ -17,7 +17,7 @@ Example start:
   
   * You should change the volume mappings to you local file system paths.
   * You should set your music library root to `/music` and configure backups to `/backup` on first run.
-  * You should also publish 9003 (UDP) and the range 9100-9200 (TCP). Unfortunately these cannot be changed because Roon on your client machine will only attempt to discover the Roon Server CORE and connect to it at these ports. 
+  * You should also publish `9003` (UDP) and the range `9100-9200` (TCP). Unfortunately these cannot be changed because Roon on your client machine will only attempt to discover the Roon Server CORE and connect to it at these ports. 
   
 ## Version history
 
